@@ -3,7 +3,7 @@ from fastapi.staticfiles import StaticFiles
 from fastapi.responses import FileResponse
 from pydantic import BaseModel
 from fastapi.middleware.cors import CORSMiddleware
-from run_model_core import generate_response
+from run_model import generate_response
 import os
 import json
 
@@ -67,3 +67,4 @@ if os.path.exists("ui"):
     @app.get("/")
     def read_root():
         return FileResponse("ui/index.html")
+
