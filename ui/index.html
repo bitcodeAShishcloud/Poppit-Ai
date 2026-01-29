@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#1a1a1a">
+    <title>Poppit AI - Intelligent Assistant</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <!-- Browser Warning -->
+    <div class="browser-warning" id="browserWarning">
+        <button class="browser-warning-close" onclick="this.parentElement.remove()">&times;</button>
+        <strong>⚠️ Note:</strong> <span id="warningText"></span>
+    </div>
+
+    <!-- Mobile Menu Button -->
+    <button class="mobile-menu-btn" id="mobileMenuBtn">
+        ☰
+    </button>
+
+    <!-- Sidebar Overlay for Mobile -->
+    <div class="sidebar-overlay" id="sidebarOverlay"></div>
+
+    <div class="app-container">
+        <!-- Sidebar -->
+        <div class="sidebar" id="sidebar">
+            <div class="sidebar-header">
+                <button class="new-chat-btn" id="newChatBtn">
+                    ➕ New Chat
+                </button>
+            </div>
+            <div class="chat-list" id="chatList">
+                <!-- Chat history items will be added here dynamically -->
+            </div>
+            <div class="sidebar-footer">
+                <button class="clear-all-btn" id="clearAllChatsBtn">
+                    🗑️ Clear All Chats
+                </button>
+            </div>
+        </div>
+        
+        <!-- Sidebar Toggle -->
+        <button class="sidebar-toggle" id="sidebarToggle">
+            ◀
+        </button>
+        
+        <!-- Main Chat Container -->
+        <div class="chat-container">
+            <div class="chat-header">
+                <div class="header-left-controls">
+                    <button class="header-btn" id="reloadChatBtn" title="Reload current chat">🔄</button>
+                    <button class="header-btn" id="exportTxtBtn" title="Export as Text">🖨️ TXT</button>
+                    <button class="header-btn" id="exportPdfBtn" title="Export as PDF">🖨️ PDF</button>
+                </div>
+                <div class="header-title">🤖 Poppit AI</div>
+                <div class="header-right-controls">
+                    <button class="theme-toggle" id="themeToggle">☀️ Light</button>
+                </div>
+            </div>
+            <div class="chat-messages" id="chatMessages">
+            </div>
+            <div class="loading" id="loading">
+                <div class="typing-indicator">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                AI is thinking...
+            </div>
+            <div class="chat-input-container">
+                <textarea 
+                    id="userInput" 
+                    placeholder="Type your message here..." 
+                    autocomplete="off"
+                    rows="1"
+                ></textarea>
+                <button id="voiceBtn" class="voice-btn" title="Voice input">
+                    🎤
+                </button>
+                <button id="sendBtn">Send</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>
