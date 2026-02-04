@@ -8,6 +8,8 @@
 
 **A professional full-stack AI chatbot powered by fine-tuned Gemma 2B with QLoRA, featuring a modern ChatGPT-like interface**
 
+ Download Modal From [here](https://drive.google.com/file/d/10Pr7Kqx2kHyQ6tx61YrTsUlokSQUV7xm/view?usp=sharing)
+
 [Features](#-features) • [Quick Start](#-quick-start) • [Installation](#-installation) • [API](#-api-reference) • [Training](#-training-custom-model)
 
 </div>
@@ -798,3 +800,4 @@ If this project helped you, please consider:
 **[⬆ Back to Top](#-poppit-ai---intelligent-conversational-assistant)**
 
 </div>
+
