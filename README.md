@@ -794,6 +794,7 @@ If this project helped you, please consider:
 <div align="center">
 
 **🚀 Ready to start? Run `start_ai.bat` and visit http://localhost:8080**
+
 **Download Modal From [here](https://drive.google.com/file/d/10Pr7Kqx2kHyQ6tx61YrTsUlokSQUV7xm/view?usp=sharing)**
 
 *Built with ❤️ using Gemma 2B, QLoRA, FastAPI, and Vanilla JavaScript*
@@ -801,5 +802,6 @@ If this project helped you, please consider:
 **[⬆ Back to Top](#-poppit-ai---intelligent-conversational-assistant)**
 
 </div>
+
 
 
